@@ -1,7 +1,7 @@
 
 import App from '../App'; 
-import Home from '../Pages/Home';
-import CountryDetails from '../Pages/CountryDetails';
+import Home from '../Pages/Home/Home';
+import CountryDetails from '../Pages/CountryDetails/CountryDetails';
 
 const routes = [
   {
