@@ -13,7 +13,7 @@ const routes = [
         element: <Home />, 
       },
       {
-        path: "/country/:code",
+        path: "/country/:countryCode",
         element: <CountryDetails />, 
       }
     ]

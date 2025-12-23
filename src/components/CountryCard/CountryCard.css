@@ -4,10 +4,13 @@
   /* OR use flex-basis for more responsiveness: */
   /* flex: 1 1 250px; */ 
 
-  background-color: white;
+  background-color: var(--element-color);
+  color: var(--text-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;    
+  overflow: hidden;  
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;  
 }  
 
 .flag-image{

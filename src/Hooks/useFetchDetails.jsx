@@ -1,8 +1,8 @@
 import {useQuery} from '@tanstack/react-query';
 
 
-async function fetchCountry(countryCode) {
-    const response = await fetch(`https://restcountries.com/v3.1/alpha/${countryCode}`);
+async function fetchCountry(code) {
+    const response = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
     if(!response.ok){
         throw new Error("could not fetch")
     }
@@ -18,7 +18,7 @@ export function useFetchDetails(countryCode) {
     });
 
     return{
-        country: data || [],
+        country: data?.[0] || [],
         isLoading,
         error
     }
