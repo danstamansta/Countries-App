@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext";
-import "./Navbar.css";
+import "./NavBar.css";
 
 export default function Navbar() {
   const { isDark, toggleTheme } = useTheme();
