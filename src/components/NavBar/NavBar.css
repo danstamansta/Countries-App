@@ -1,0 +1,40 @@
+/* 1. The Navbar Strip */
+.navbar {
+  background-color: var(--element-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  margin: 0;              /* Remove any margins that might cause gaps */
+  padding: 5px;
+  margin-bottom:40px;
+}
+
+/* 2. The Container */
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Pushes left and right apart */
+  align-items: center;
+  padding-top:20px;
+  padding-bottom:20px;
+  
+}
+
+/* 3. The Title (Targeting the class now) */
+.navbar-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0; /* Resets default browser margin */
+}
+
+.theme-toggle {
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 14px;
+  margin-right:20px;
+}
+
+.theme-toggle:hover {
+  opacity: 0.7;
+}

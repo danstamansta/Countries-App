@@ -1,0 +1,14 @@
+.region-select {
+  background-color: var(--element-color);
+  color: var(--text-color);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding: 0 20px;
+  height: 50px;    
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+
+

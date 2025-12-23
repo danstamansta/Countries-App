@@ -1,8 +1,17 @@
 .countries-grid {
   display: flex;
-  flex-wrap: wrap;       /* This is the KEY line. It forces items to the next line. */
-  gap: 20px;             /* Adds space between columns and rows */
-  justify-content: center; /* Centers the whole block of cards */
+  flex-wrap: wrap;       
+  gap: 20px;             
+  justify-content: center; 
   padding: 20px;
-  
 }
+
+
+.filter-and-search {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1400px;
+  margin: 40px auto; 
+}
+

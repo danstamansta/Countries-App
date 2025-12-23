@@ -1,0 +1,46 @@
+.details-grid {
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: 1fr 1fr; 
+  column-gap: 30px; 
+  row-gap: 15px;    
+}
+
+.details-text {
+  background-color: var(--element-color);
+  color: var(--text-color);
+  
+  border-radius: 5px;       
+  box-shadow: var(--shadow);  
+  padding-left:20px;              
+  
+  transition: all 0.2s ease;
+}
+
+.back-button {
+  display: flex;  
+  width:fit-content;
+  margin:0 auto;
+  align-items: center;       
+  gap: 10px;                 
+  
+  background-color: var(--element-color); 
+  color: var(--text-color);
+  
+  padding: 8px 24px;        
+  border-radius: 4px;        
+  box-shadow: 0 0 7px rgba(0,0,0,0.2); 
+  text-decoration: none;     
+  margin-bottom: 20px;       
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.country-info-image{
+  display:block;
+  margin:0 auto;
+
+}

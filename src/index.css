@@ -1,30 +1,22 @@
 body {
-  /* This connects the background to the variable */
+  margin:0;
+  padding:0;
   background-color: var(--bg-color); 
   color: var(--text-color);
-  
-  /* OPTIONAL: Ensures the dark color goes all the way to the bottom */
-  min-height: 100vh; 
-  margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  
-  /* Smooth transition when switching */
   transition: background-color 0.2s linear;
 }
 
-
 :root {
-  /* Light Mode Colors (Default) */
-  --bg-color: #fafafa;          /* Light Gray Background */
-  --element-color: #ffffff;     /* White Elements */
-  --text-color: #111517;        /* Black Text */
-  --input-color: #858585;       /* Gray Placeholder */
+  --bg-color: #fafafa;          
+  --element-color: #ffffff;     
+  --text-color: #111517;        
+  --input-color: #858585;      
 }
 
 body.dark-mode {
-  /* Dark Mode Colors (Override) */
-  --bg-color: #202c37;          /* Dark Blue Background */
-  --element-color: #2b3945;     /* Dark Blue Elements */
-  --text-color: #ffffff;        /* White Text */
-  --input-color: #ffffff;       /* White Placeholder */
+  --bg-color: #202c37;          
+  --element-color: #2b3945;     
+  --text-color: #ffffff;        
+  --input-color: #ffffff;     
 }
