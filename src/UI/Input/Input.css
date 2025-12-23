@@ -28,4 +28,9 @@
   color: var(--input-color); 
 }
 
+.search-input:focus{
+  outline:none;
+  border:none;
+}
+
 
