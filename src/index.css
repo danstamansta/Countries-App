@@ -1,22 +1,20 @@
-body {
-  margin:0;
-  padding:0;
-  background-color: var(--bg-color); 
-  color: var(--text-color);
-  font-family: 'Nunito Sans', sans-serif;
-  transition: background-color 0.2s linear;
+:root {
+  color-scheme: light-dark;
+  --bg-color: light-dark(#fafafa, #202c37);
+  --element-color: light-dark(#ffffff, #2b3945);
+  --text-color: light-dark(#111517, #ffffff);
+  --input-color: light-dark(#858585, #ffffff);
 }
 
-:root {
-  --bg-color: #fafafa;          
-  --element-color: #ffffff;     
-  --text-color: #111517;        
-  --input-color: #858585;      
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Nunito Sans", sans-serif;
+  transition: background-color 0.2s l inear;
 }
 
 body.dark-mode {
-  --bg-color: #202c37;          
-  --element-color: #2b3945;     
-  --text-color: #ffffff;        
-  --input-color: #ffffff;     
+  color-scheme: dark;
 }

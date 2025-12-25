@@ -1,14 +1,13 @@
 import { useFetchDetails } from "../../Hooks/useFetchDetails";
-import {useParams} from "react-router-dom";
-import CountryInfo from "../../components/CountryInfo/CountryInfo";
+import { useParams } from "react-router-dom";
+import CountryInfo from "../../blocks/CountryInfo/CountryInfo";
 
-export default function CountryDetails(){
-    const {countryCode} = useParams();
-    const {country, error, isLoading} = useFetchDetails(countryCode)
+export default function CountryDetails() {
+  const { countryCode } = useParams();
+  const { country, error, isLoading } = useFetchDetails(countryCode);
 
-    if (isLoading) return <h1>Loading...</h1>
-    if (error) return <h1>error</h1>
+  if (isLoading) return <h1>Loading...</h1>;
+  if (error) return <h1>error</h1>;
 
-
-   return (<CountryInfo country={country}/>);
+  return <CountryInfo country={country} />;
 }

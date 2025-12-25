@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 
-
 export function ThemeProvider({ children }) {
-  
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem("darkMode");
-    return savedTheme === "true"; 
+    return savedTheme === "true";
   });
 
   const toggleTheme = () => {
@@ -29,4 +27,3 @@ export function ThemeProvider({ children }) {
     </ThemeContext.Provider>
   );
 }
-
